@@ -77,7 +77,7 @@ p {
   }
 }
 .intro {
-	background-image: url("tiger.jpg");
+	background-image: url("themes/tiger.jpg");
 	height: 100%;
 	background-attachment: fixed;
 	background-position:center;
@@ -100,7 +100,6 @@ h1 {
 
 /*Content*/
 .AboutMe {
-	background-image: url("kyle.jpg");
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -132,7 +131,7 @@ h1 {
 	color: white;
 }
 .Portfolio { 
-	background-image: url("portfolio.jpg");
+	background-image: url("portfolio/portfolio.jpg");
 	height: 100%;
 	background-attachment: fixed;
 	background-position:center;
@@ -161,23 +160,6 @@ h1 {
 	background-size: cover;
 	color: white;
 }
-.Contact { 
-	text-align: center;
-	background-image: url("contact.jpg");
-	height: 100%;
-	background-attachment: fixed;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: white;
-}
-.Contact p {
-	text-align: left;
-}
-.Contact h2 {
-	font-size: 150px;
-	text-align: center;
-}
 #column p {
 	font-size: 90px;
 	text-align: center;
@@ -190,6 +172,9 @@ video {
 	height: 70%;
 	margin: 0 auto;
 	display: block;
+}
+.Contact {
+	color: white;
 }
 /*End of Content*/
 
@@ -295,8 +280,7 @@ video {
 	}
 </style>
 <title> The Official Website of Subrajit Surendran </title>
-<link rel = "icon" href =  
-"S.png" type = "image/x-icon"> 
+<link rel="icon" href="icons/S.png" type="image/x-icon"> 
 </head>
 <body>
 <div class="main">
@@ -306,12 +290,12 @@ video {
 		<a href="#about">About</a>
 	</div>
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<img src="menu.png">
+		<img src="icons/menu.png">
 	</a>
 </div> 
 <button onclick="topFunction()" id="top" title="Go to top"> Top </button>
 <audio id="sound" autoplay>   
-	<source src="Travvy.mp3" type="audio/mpeg">
+	<source src="themes/Travvy.mp3" type="audio/mpeg">
 </audio>
 <div class="intro">	
 	<h1> Subrajit </h1>
@@ -324,15 +308,6 @@ video {
 		<div data-aos="fade-up" data-aos-anchor-placement="center-center">
 			<h2> About Me </h2> 
 		</div>
-	</section>
-	<section class="panel blue" style="background-color: blue">
-		<b>ONE</b>
-	</section>
-	<section class="panel turqoise" style="background-color: red">
-		<b>TWO</b>
-	</section>
-	<section class="panel green" style="background-color: green">
-		<b>THREE</b>
 	</section>
 </div>
 <section id="down" class="demo">
@@ -357,10 +332,10 @@ video {
 </div>
 <div class="Sports1">
 	<video id="russ" autoplay loop muted> 
-		<source src="russell.mp4" type="video/mp4">
+		<source src="themes/russell.mp4" type="video/mp4">
 	</video>
 	<video id="MT" autoplay loop muted style="height: 80%; width: 50%; margin-left: auto; margin-right: auto; padding: 0"> 
-		<source src="MT.mp4" type="video/mp4">
+		<source src="themes/MT.mp4" type="video/mp4">
 	</video>
 </div>
 <div class="Sports2" style="background-color: black">
@@ -386,13 +361,10 @@ video {
 <section id="down" class="demo">
 	<a href="#contact"><span></span></a>
 </section>
-<div class="Contact" id="contact">
-<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-	<h2> Contact </h2>
-</div>
-</div>
-<section id="down" class="demo">
-	<a href="#quote"><span></span></a>
+<section class="contact">
+	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
+		<h2>Contact</h2>
+	</div>
 </section>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
@@ -422,29 +394,6 @@ function myFunction() {
   }
 }
 AOS.init();
-
-// Header
-
-	$(function () { // wait for document ready
-		// init
-		var controller = new ScrollMagic.Controller();
-
-		// define movement of panels
-		var wipeAnimation = new TimelineMax()
-			.fromTo("section.panel.turqoise", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
-			.fromTo("section.panel.turqoise", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-			.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  
-			.fromTo("section.panel.bordeaux", 1, {x: "100%"}, {y: "0%", ease: Linear.easeNone}); 
-		// create scene to pin and link animation
-		new ScrollMagic.Scene({
-				triggerElement: "#about",
-				triggerHook: "onLeave",
-				duration: "300%"
-			})
-			.setPin("#about")
-			.setTween(wipeAnimation)
-			.addTo(controller);
-	});
 </script>
 </body>
 </html>
