@@ -17,30 +17,6 @@ body {
     background-color: black;
 }
 
-/*Menu*/
-.icon {
-	color: white;
-	float: left;
-    -webkit-animation: fadeIn ease 1s;
-}
-.main {
-	position: absolute;
-	background-color: rgba(0,0,0,.5);
-	color: white;
-	width: 100%;
-    -webkit-animation: fadeIn ease 1s;
-}
-.main img {
-	display: block;
-	width: 50px;
-	height: 50px;
-}
-#dropdown {
-	display: none;
-    -webkit-animation: fadeIn ease 1s;
-}
-/*End of Menu*/
-
 #dropdown a {
 	float: right;
 }
@@ -48,25 +24,42 @@ a {
 	color: white;
 	font-family: Brush Script MT, Brush Script Std, cursive;
 	text-decoration: none;
-	font-size: 40px;
+	font-size: 40vh;
 	text-align: center;
-	padding: 5px 10px;
+	padding: 5vh 10vh;
 }
 a:hover {
 	opacity: .3;
 }
 /*Front cover*/
+h1 {
+	position: absolute;
+	color: rgba(255,255,255,1);
+	font-size: 25vh;
+	font-family: 'Rochester', cursive;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-animation: fadeIn ease 2s;
+}
 h2 {
 	color: white;
-	font-size: 80px;
+	font-size: 10vh;
 	text-align: center;
 	font-family: 'Rochester', cursive;
-	-webkit-animation: fadeIn ease 1s;
+	-webkit-animation: fadeIn ease 2s;
+}
+h3 {
+	float: left;
+	margin-left: 4vh;
+	text-decoration: underline;
+	font-size: 6vh;
 }
 p {
-	font-size: 20px;
-	text-align: center;
+	font-size: 5vh;
 	font-family: 'Rochester', cursive;
+	margin-left: 4vh;
+	margin-top: 7vh;
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -77,104 +70,54 @@ p {
   }
 }
 .intro {
-	background-image: url("themes/tiger.jpg");
 	height: 100%;
-	background-attachment: fixed;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    -webkit-animation: fadeIn ease 1s;
-}
-h1 {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	color: #e1ebeb;
-	font-size: 400px;
-	font-family: 'Rochester', cursive;
-    -webkit-animation: fadeIn ease 1s;
+	width: 100%;
 }
 /*End of front cover*/
-
-
 /*Content*/
-.AboutMe {
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.about {
+	background: rgba(0, 0, 0, 0.7); 
+	height: 350vh;
+	margin-left: 5%;
+	text-align: left;
+	width: 189.3vh;
 	color: white;
-}
-
-.AboutMe h2 {
-	font-size: 200px;
-	margin: auto;
-}
-.tamu {
-	background-color: white;
-	height: 100%;
-	background-attachment: relative;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #500000;
-}
-.hobbies {
-	background-color: black;
-	height: 100%;
-	background-attachment: relative;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: white;
+	position: relative;
 }
 .Portfolio { 
-	background-image: url("portfolio/portfolio.jpg");
-	height: 100%;
-	background-attachment: fixed;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	clear: both;
+	background: rgba(0, 0, 0, 0.7); 
 	color: white;
-}
-.Portfolio h2 {
-	font-size: 200px;
-	text-align: center;
-	transform: translate(0%, 90%);
-}
-.gradebook {
-	height: 100%;
-	background-attachment: fixed;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: white;
+	height: 100vh;
+	width: 189.3vh;
+	margin-left: 5%;
+	margin-top: 4vh;
+	position: relative;
 }
 .skills {
-	height: 100%;
-	background-attachment: fixed;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: rgba(0, 0, 0, 0.7); 
 	color: white;
-}
-#column p {
-	font-size: 90px;
-	text-align: center;
-	line-height: 500px;
-	font-family: 'Rochester', cursive;
-}
-video {
-	z-index: -999;
-	padding: 20px;
-	height: 70%;
-	margin: 0 auto;
-	display: block;
+	height: 100vh;
+	width: 189.3vh;
+	margin-left: 5%;
+	margin-top: 4vh;
+	position: relative;
 }
 .Contact {
 	color: white;
+	background: rgba(0, 0, 0);
+	width: 189.3vh;
+	height: 35vh;
+	margin-left: 5%;
+	position: relative;
+}
+.ending {
+	color: white;
+	background: rgba(0, 0, 0);
+	width: 189.3vh;
+	height: 15vh;
+	margin-left: 5%;
+	position: relative;
 }
 /*End of Content*/
 
@@ -182,83 +125,21 @@ video {
 #top {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 2vh;
+    right: 2vh;
     z-index: 99;
-    font-size: 18px;
+    font-size: 3vh;
     border: none;
     outline: none;
     background-color: black;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
+    padding: 1vh;
 }
 #top:hover {
 	opacity: .3;
 } 
 /*End of top scroll*/
-
-/*Google API scroll button*/
-.demo a {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  transition: opacity .3s;
-}
-.demo a:hover {
-  opacity: .5;
-}
-.demo {
-  position: relative;
-  bottom: 0px;
-}
-#down a {
-  padding-top: 0;
-}
-#down a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb04 2s infinite;
-  animation: sdb04 2s infinite;
-}
-@-webkit-keyframes sdb04 {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-}
-@keyframes sdb04 {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-} 
-/*End of scroll button*/
 
 [aos="fade"] {
   opacity: 0;
@@ -268,103 +149,136 @@ video {
 [aos="fade"].aos-animate {
   opacity: 1;
 }
-	#about {
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-	}
-	.panel {
-		height: 100%;
-		width: 100%;
-		position: absolute;
-	}
+#myVideo {
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 110vh;
+}
+button {
+	position: relative;
+	margin-left: 5vh;
+	background-color: rgba(0,0,0,0);
+	border: .5vh black;
+	color: white;
+	padding: 2.5vh 4vh;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3vh;
+	float: right;
+	-webkit-animation: fadeIn ease 2s;
+}
+button.text:hover {
+	background-color: rgba(255,255,255,.5);
+}
+.coding {
+	margin-top: 2vh;
+	margin-left: 6vh;
+	width: 30%;
+	height: 75%;
+
+}
+.workout {
+	margin-left: 35%;
+	margin-top: -39.6%;
+	width: 30%;
+	height: 75%;
+
+}
+.sports {
+	margin-left: 66.83%;
+	margin-top: -39.6%;
+	width: 30%;
+	height: 75%;
+
+}
 </style>
 <title> The Official Website of Subrajit Surendran </title>
 <link rel="icon" href="icons/S.png" type="image/x-icon"> 
 </head>
 <body>
-<div class="main">
-	<div id="dropdown">
-		<a href="#contact">Contact</a>
-		<a href="#portfolio">Portfolio</a>
-		<a href="#about">About</a>
-	</div>
-	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<img src="icons/menu.png">
-	</a>
-</div> 
 <button onclick="topFunction()" id="top" title="Go to top"> Top </button>
-<audio id="sound" autoplay>   
-	<source src="themes/Travvy.mp3" type="audio/mpeg">
-</audio>
 <div class="intro">	
-	<h1> Subrajit </h1>
+	<video autoplay muted loop id="myVideo">
+		<source src="themes/720p.mp4" type="video/mp4">
+	</video>
+	<h2 style="font-size: 7vh; text-align: left; position: relative; background-color: rgba(0,0,0,1)"> &nbsp; Subrajit Surendran
+	<button type="button" style="margin-right: 3vh"> Contact </button>
+	<button type="button"> Portfolio </button>
+	<button type="button"> About </button>
+	</h2>
+	<h1>Welcome</h1>
 </div>
-<section id="down" class="demo">
-	<a href="#about"><span></span></a>
-</section>
-<div id="about">
-	<section class="AboutMe">
-		<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-			<h2> About Me </h2> 
-		</div>
+<div class="about">
+	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
+	</div>
+		<h2>Allow me to introduce myself...</h2>
+		<img style="width: 60vh; height: 35vh; float: right; margin-right: 3vh; margin-top: 13vh" src="about/honors.jpg">
+		<h3> Introduction </h3>
+		<p style="margin-top: 10vh"> Howdy! My name is Subrajit Surendran and I am an Engineering Honors student at THE 
+		Texas A&amp;M University in College Station, TX. 
+		I am majoring in Computer Engineering and 
+		expect to graduate in the Spring of 2022. I chose computer engineering as my major to 
+		further my skills in coding while gaining the requisite hardware knowledge to design and program technology.</p>
+		<h3 style="margin-top: 7vh"> Organizations/Volunteering </h3>
+		<p style="margin-top: 15vh"> I was a member of SASE during the 2018-2019 school year. 
+		This organization celebrates diversity on campus and prepares students for the global business 
+		world. SASE also allows students to give back to the community through various events. I volunteered with SASE during 
+		A&amp;M's annual Big Event.</p>
+		<img style="width: 65vh; height: 30vh; margin-left: 33%; margin-top: 5vh" src="tamu/sase.png">
+		<p style="margin-top: 5vh"> On March 30,2019 I volunteered during A&amp;M's annual Big Event. The Big 
+		Event is the largest one-day, student-run service project in the nation. It is a day when Aggies give back to the Bryan-College Station 
+		community through volunteering. My group, as pictured below, helped deconstruct a backyard patio for a family in College Station. </p>
+		<img style="width: 65vh; height: 35vh; margin-left: 13%; margin-top: 5vh" src="tamu/bigevent.jpg">
+		<img style="width: 65vh; height: 35vh; margin-left: 5%; margin-top: -5vh" src="about/bigevent.jpg">
+		<p style="margin-top: 5vh"> I was a member of the Aggie Coding Club during the 2019-2020 school year. This organization
+		gave me the opportunity to work on various coding/hardware projects. One of these projects included a Micro-Mouse that could navigate a maze 
+		on its own. This organization also prepared me for coding hackathons such as TAMUhack.</p>
+		<img style="width: 65vh; height: 30vh; margin-left: 3vh; margin-top: 5vh" src="tamu/acc.png">
+		<img style="width: 100vh; height: 100vh; margin-left: 40%; margin-top: -30vh" src="about/image.jpg">
+		<img style="width: 65vh; height: 65vh; margin-left: 3vh; margin-top: -65vh" src="about/me.jpg">
+</div>  
+<div class="Portfolio" id="portfolio">
+	<h2> Hobbies </h2>
+	<section class="coding">
+		<h2 style="font-size: 6vh"> Coding </h2>
+		<video style="margin-top: 8.6vh" width="100%" height="300vh" autoplay loop muted>
+			<source src="about/coding2.mp4" type="video/mp4">
+		</video>
+	</section>
+	<section class="workout">
+		<h2 style="font-size: 6vh"> Working Out </h2>
+		<video style="margin-top: 10vh" width="100%" height="300vh" autoplay loop muted>
+			<source src="about/basketball.mp4" type="video/mp4">
+		</video>
+	</section>
+	<section class="sports">
+		<h2 style="font-size: 6vh"> Sports </h2>
+		<video style="margin-top: 10vh" width="100%" height="300vh" autoplay loop muted>
+			<source src="themes/russell.mp4" type="video/mp4">
+		</video>
 	</section>
 </div>
-<section id="down" class="demo">
-	<a href="#tamu"><span></span></a>
-</section>
-<div class="tamu" id="tamu">
-	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-		<h2 style="color: #500000; font-size: 50px">Hello, I'm Subrajit Surendran. I am looking for an internship for the Summer of 2021.</h2>
-		<p>I attend Texas A&amp;M University.</p>
-		<p>I am majoring in Computer Engineering</p>
-		<p>I am a Honors Engineering student</p>
-		<p>I have volunteered and participated in multiple organizations at the university 
-		including the Society of Asian Scientists and Engineers and the Aggie Coding Club</p>
-	</div>
-</div>
-<div class="activities">
-</div>
-<div class="hobbies">
-	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-		<h2>Hobbies</h2>
-	</div>
-</div>
-<div class="Sports1">
-	<video id="russ" autoplay loop muted> 
-		<source src="themes/russell.mp4" type="video/mp4">
-	</video>
-	<video id="MT" autoplay loop muted style="height: 80%; width: 50%; margin-left: auto; margin-right: auto; padding: 0"> 
-		<source src="themes/MT.mp4" type="video/mp4">
-	</video>
-</div>
-<div class="Sports2" style="background-color: black">
-</div>
-<section id="down" class="demo">
-	<a href="#portfolio"><span></span></a>
-</section>
-<div class="Portfolio" id="portfolio">
-	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-		<h2> Portfolio </h2>
-	</div>
-</div>
-<section class="gradebook">
-	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-		<h2>Gradebook Project</h2>
-	</div>
-</section>
 <section class="skills">
 	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-		<h2>Technical Skills</h2>
 	</div>
-</section>
-<section id="down" class="demo">
-	<a href="#contact"><span></span></a>
+		<h2>Technical Skills</h2>
 </section>
 <section class="contact">
 	<div data-aos="fade-up" data-aos-anchor-placement="center-center">
-		<h2>Contact</h2>
 	</div>
+	<p style="text-align: center; margin-top: 4vh"> Contact Information</p>
+	<p style="text-align: center; margin-top: 0"> LinkedIn: Subrajit Surendran</p>
+	<p style="text-align: center; margin-top: 0"> Email: subrajit2006@gmail.com or subr809@tamu.edu </p>
+	<p style="text-align: center; margin-top: 0"> Facebook: Subrajit Surendran </p> 
+	<p style="text-align: center; margin-top: 0"> Instagram: subraj.s </p>  
+</section>
+<section class="ending">
+	 <p style="text-align: center; margin-top: 4vh"> Coded by Subrajit Surendran</p>
+	 <p style="text-align: center; margin-top:0"> Summer 2020</p>
 </section>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
@@ -384,14 +298,6 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-function myFunction() {
-  var x = document.getElementById("dropdown");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
 }
 AOS.init();
 </script>
